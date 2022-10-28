@@ -28,7 +28,6 @@ add_check_box = st.sidebar.checkbox(
 if "visibility" not in st.session_state:
     st.session_state.visibility = "visible"
     st.session_state.disabled = False
-    st.session_state.placeholder = True
 
 # Create sample select box
 select_sample_box = st.selectbox(
@@ -42,7 +41,6 @@ text_input = st.text_input(
     value=select_sample_box,
     label_visibility=st.session_state.visibility,
     disabled=st.session_state.disabled,
-    placeholder=st.session_state.placeholder,
     help="Input some word to see the result of the correction"
 )
 text_input = text_input.lower()
