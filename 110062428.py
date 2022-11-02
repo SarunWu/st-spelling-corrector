@@ -31,8 +31,8 @@ if "visibility" not in st.session_state:
 
 # Create sample select box
 select_sample_box = st.selectbox(
-    'Expected word',
-    ('Emaill', 'Terevision', 'Temperature', 'Comeputer', 'Cemara', 'Nodebook', 'Supermarket', 'Scren'),
+    'Select word',
+    ('', 'Emaill', 'Terevision', 'Temperature', 'Comeputer', 'Cemara', 'Nodebook', 'Supermarket', 'Scren'),
     help="This is the list of wrongly-spelled words, pick one to see to the correct answer")
 
 # Create input box, Handle input box event on press enter
